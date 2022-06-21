@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+### 二分查找快速API
 
-You can use the [editor on GitHub](https://github.com/sieryiyi/Python_function/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+```
+import bisect
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+bisect.bisect_left([1,2,6,8],7)  # 找出7的合适插入位置或找出7在列表中的哪一个
+bisect.bisect_right([1,2,6,8],7)  # 找出位置后+1
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### 装饰器
 
-### Jekyll Themes
+#### @functools.lru_cache
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sieryiyi/Python_function/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+开拓额外空间，记录函数过往出现过的自变量取值x而算出的函数结果f(x)，当再次遇到相同自变量输入，直接调用算过的结果
 
-### Support or Contact
+### 小根堆
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Python是小根堆，想转大根堆就把元素集体×(-1)
+
+```
+import heapq
+
+heapq.heapify([1,5,3,6])
+heapq.heappop()
+heapq.heappush([1,5,2,3],7)
+heapq.heapreplace([1,5,6,7],4) # 删除最小元素，并添加新的
+heapq.heappushpop([1,4,5,6],3) # 比较要添加元素x与最小的堆元素大小，如果大，删除最小堆元素并把x加进去，否则堆不变
+
+```
