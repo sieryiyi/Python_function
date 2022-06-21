@@ -1,8 +1,8 @@
-### 二分查找快速API
+### 二分查找
+
+#### import bisect
 
 ```
-import bisect
-
 bisect.bisect_left([1,2,6,8],7)  # 找出7的合适插入位置或找出7在列表中的哪一个
 bisect.bisect_right([1,2,6,8],7)  # 找出位置后+1
 
@@ -16,11 +16,11 @@ bisect.bisect_right([1,2,6,8],7)  # 找出位置后+1
 
 ### 小根堆
 
+#### import heapq
+
 Python是小根堆，想转大根堆就把元素集体×(-1)
 
 ```
-import heapq
-
 heapq.heapify([1,5,3,6])
 heapq.heappop()
 heapq.heappush([1,5,2,3],7)
