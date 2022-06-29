@@ -39,6 +39,8 @@ s.get(key,default)   # 查找关键词key，如果不存在，返回默认值def
 
 import re
 
+https://blog.csdn.net/zhiguigu/article/details/119992775?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165647420416782184623744%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165647420416782184623744&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~top_positive~default-1-119992775-null-null.nonecase&utm_term=python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&spm=1018.2226.3001.4450
+
 正则表达式是用在findall()方法当中，大多数字符串检索都可以通过这个方式完成
 
 re.findall(正则表达式，目标字符串)
@@ -47,7 +49,7 @@ re.findall(正则表达式，目标字符串)
 
 #### 正则表达式[]
 
-https://blog.csdn.net/zhiguigu/article/details/119992775?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165647420416782184623744%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165647420416782184623744&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~top_positive~default-1-119992775-null-null.nonecase&utm_term=python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&spm=1018.2226.3001.4450
+
 
 用来指定一个字符集
 
