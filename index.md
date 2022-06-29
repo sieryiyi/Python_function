@@ -35,3 +35,61 @@ s.get(key,default)   # 查找关键词key，如果不存在，返回默认值def
 
 能极大 ———— 程度节省时间，对比判断存不存在，再赋值默认值来说
 
+### 正则表达式（用来处理字符串）
+
+import re
+
+正则表达式是用在findall()方法当中，大多数字符串检索都可以通过这个方式完成
+
+re.findall(正则表达式，目标字符串)
+
+找不到匹配字符串会返回[]，找到则返回[正则表达式]
+
+#### 正则表达式[]
+
+https://blog.csdn.net/zhiguigu/article/details/119992775?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165647420416782184623744%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165647420416782184623744&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~top_positive~default-1-119992775-null-null.nonecase&utm_term=python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&spm=1018.2226.3001.4450
+
+用来指定一个字符集
+
+```
+s = "a123456b"
+rule = "a[0-9][1-6][1-6][1-6][1-6][1-6]b"	
+l = re.findall(rule,s)
+print(l)
+
+```
+
+```
+s = "abcabcaccaac"
+rule = "a[a,b,c]c"  # rule = "a[a-z0-9][a-z0-9][a-z0-9][a-z0-9]c"	
+l = re.findall(rule, s)
+print(l)
+
+```
+
+#### 表达式^和$
+
+^ 通常用来匹配行首
+
+$ 通常用来匹配行尾，不匹配则返回[]
+
+#### 表达式反斜杠\
+
+\d：匹配任何十进制数等价于[0-9]
+
+re.findall("c\d\d\da", "abc123abc")
+
+\可以转义成普通字符
+
+re.findall("\^abc", "^abc^abc")
+
+\s：匹配任何空白字符
+
+re.findall("\s\s", "a     c"
+
+['  ', '  ']
+
+\w：匹配任何字母数字和下划线，等价于[a-z，A-Z，0-9_]，例如：
+
+re.findall("\w\w\w", "abc12_")  # 似乎是匹配完abc，再从下一个位置开始找匹配，而不会是abc,bc1
+
