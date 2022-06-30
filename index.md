@@ -167,3 +167,7 @@ print(l)
 ['a', 'ca', 'cacc']
 
 ```
+
+### 阶乘
+
+math.factorial(3)
