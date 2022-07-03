@@ -171,3 +171,15 @@ print(l)
 ### 阶乘
 
 math.factorial(3)
+
+### 字符串
+
+a='123'
+
+a.isalpha()
+
+a.isdigit()
+
+a.islower()
+
+a.isupper()
