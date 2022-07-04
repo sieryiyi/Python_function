@@ -248,3 +248,14 @@ lst.sort(key = lambda x : (x[1],x[0]))
 
 默认是升序排序，注意！！！！！！！！！！！！
 ```
+```
+import collections
+n=list(input())
+s=collections.Counter(n)
+
+s=s.items()
+
+s=sorted(s,key=lambda x:(-x[1],x[0]))
+for i,(x,y) in enumerate(s):
+    print(x,end='')
+```
