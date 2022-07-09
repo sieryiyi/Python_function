@@ -259,3 +259,8 @@ s=sorted(s,key=lambda x:(-x[1],x[0]))
 for i,(x,y) in enumerate(s):
     print(x,end='')
 ```
+
+
+https://www.nowcoder.com/practice/fbc417f314f745b1978fc751a54ac8cb?tpId=37&tags=&title=&difficulty=3&judgeStatus=3&rp=1&sourceUrl=%2Fexam%2Foj%2Fta%3Fdifficulty%3D3%26judgeStatus%3D3%26page%3D1%26pageSize%3D50%26search%3D%26tpId%3D37%26type%3D37
+
+这道题以后再做一次
