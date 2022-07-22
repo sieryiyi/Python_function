@@ -23,14 +23,18 @@ y=fractions.Fraction(x1-x2)
 
 ### 2、迭代器itemtools的用处
 
-##### （1）用于全排列 list(itertools.permutations（[1,2,3],2）)
+##### （1）用于全排列 
+
+list(itertools.permutations（[1,2,3],2）)
 
 会得到[(1,0),(0,2)..........]
 
 
-### eval的用法细节
+### 3、eval的用法细节
 
+```
 eval('3//2')
 >>1
 eval('3/2')
 >>1.5
+```
