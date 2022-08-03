@@ -34,6 +34,8 @@ heapq.heappush([1,5,2,3],7)
 heapq.heapreplace([1,5,6,7],4) # 删除最小元素，并添加新的
 heapq.heappushpop([1,4,5,6],3) # 比较要添加元素x与最小的堆元素大小，如果大，删除最小堆元素并把x加进去，否则堆不变
 
+heapq.nlargest(n,heap)    --查询堆中的最大n个元素
+
 ```
 
 ### 字典API
